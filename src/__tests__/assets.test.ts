@@ -21,5 +21,10 @@ describe("public assets and motion fallback", () => {
     const styles = readFileSync(resolve("src/app/globals.css"), "utf8");
     expect(styles).toContain("@media (prefers-reduced-motion: reduce)");
     expect(styles).toContain("scroll-behavior: auto");
+    expect(styles).toContain(".ambient-flow");
+    expect(styles).toContain(".hero-background-scan");
+    expect(styles).toContain(".pointer-indicator");
+    expect(styles).toContain(".skill-marquee-track");
+    expect(styles).toContain('data-copy="true"');
   });
 });

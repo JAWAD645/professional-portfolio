@@ -42,8 +42,11 @@ Reusable motion settings live in `src/lib/motion.ts`. The site includes:
 - section and card entrances;
 - dashboard chart drawing;
 - floating interface cards and data nodes;
+- drifting background signals, mesh nodes, and ambient glow fields;
+- homepage analytics gestures with moving bars, scatter points, and a data pipeline;
+- an automatic toolchain ticker that pauses on hover;
+- pointer-reactive card depth, button gestures, and a desktop cursor indicator;
 - hover lift, button shine, active navigation, and mobile menu transitions;
-- a desktop pointer glow;
 - CSS and JavaScript reduced-motion fallbacks.
 
 Animations use opacity and transforms where possible. Pointer-only effects are disabled on touch devices, and `prefers-reduced-motion` removes non-essential movement.

@@ -33,6 +33,20 @@ describe("portfolio page", () => {
     }
   });
 
+  it("renders ambient motion and the automatic toolchain ticker", () => {
+    render(<PortfolioPage />);
+
+    expect(document.querySelector(".ambient-background")).toBeInTheDocument();
+    expect(document.querySelector(".hero-data-backdrop")).toBeInTheDocument();
+    expect(document.querySelector(".pointer-indicator")).toBeInTheDocument();
+    expect(document.querySelector(".skill-marquee-track")).toBeInTheDocument();
+    expect(document.querySelectorAll(".hero-background-bar")).toHaveLength(9);
+    expect(document.querySelectorAll(".hero-scatter-point")).toHaveLength(10);
+    expect(document.querySelectorAll(".skill-marquee-item")).toHaveLength(
+      portfolio.skillGroups.flatMap((group) => group.skills).length * 2,
+    );
+  });
+
   it("offers browser-native CV downloads from navigation, hero, and contact", () => {
     render(<PortfolioPage />);
     const downloadButtons = screen.getAllByRole("button", {

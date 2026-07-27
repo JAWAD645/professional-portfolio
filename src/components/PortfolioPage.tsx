@@ -1,3 +1,4 @@
+import { AmbientBackground } from "@/components/animations/AmbientBackground";
 import { IntroLoader } from "@/components/animations/IntroLoader";
 import { MotionProvider } from "@/components/animations/MotionProvider";
 import { PointerGlow } from "@/components/animations/PointerGlow";
@@ -17,6 +18,7 @@ import { SiteFooter } from "@/components/sections/SiteFooter";
 export function PortfolioPage() {
   return (
     <MotionProvider>
+      <AmbientBackground />
       <IntroLoader />
       <ScrollProgress />
       <PointerGlow />

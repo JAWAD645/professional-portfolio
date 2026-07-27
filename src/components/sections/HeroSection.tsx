@@ -8,6 +8,7 @@ import {
   MessageSquareText,
 } from "lucide-react";
 import { AnimatedSection } from "@/components/animations/AnimatedSection";
+import { HeroDataBackdrop } from "@/components/animations/HeroDataBackdrop";
 import { RevealText } from "@/components/animations/RevealText";
 import { RotatingRoles } from "@/components/animations/RotatingRoles";
 import { HeroAnalytics } from "@/components/charts/HeroAnalytics";
@@ -20,6 +21,7 @@ export function HeroSection() {
       <div className="hero-grid" aria-hidden="true" />
       <div className="hero-glow hero-glow-one" aria-hidden="true" />
       <div className="hero-glow hero-glow-two" aria-hidden="true" />
+      <HeroDataBackdrop />
 
       <div className="hero-layout">
         <AnimatedSection className="hero-copy">
